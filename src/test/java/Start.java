@@ -6,15 +6,18 @@ public class Start {
     WebDriver wd;
 
     @Test
-    public void start() {
+    public void start1() {
         wd = new ChromeDriver();
-       // wd.get("https:/google.com");without history
-        wd.navigate().to("https:/google.com");//with history
+        wd.navigate().to("https://trello.com/");
         wd.navigate().back();
         wd.navigate().forward();
         wd.navigate().refresh();
 
-        wd.close();//only one tub if tub only one & close browser
-        wd.quit();//all tabs & close browser
+
+        wd.close();
+        wd.quit();
+
+
     }
+
 }
